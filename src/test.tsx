@@ -5,7 +5,7 @@ import "./test.css"
 const App:React.FC = () =>{
   return (
     <div>
-      <h1>이게뭐슨</h1>
+      <h1>hello,world</h1>
     </div>
   )
 }
