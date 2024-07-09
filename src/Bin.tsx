@@ -1,17 +1,13 @@
 import React from "react";
 interface BinProperties{
   h1TextNode:string;
+  styles:React.CSSProperties;
 }
-const Bin:React.FC<BinProperties>=({h1TextNode})=>{
-  let style:React.CSSProperties ={
-    color:"blue",
-    backgroundColor:"yellow",
-    fontSize:"33px"
-  }
+const Bin:React.FC<BinProperties>=({h1TextNode,styles})=>{
   return(
     <div>
-      <h1 style={style}>{h1TextNode}</h1>
+      <h1 style={styles}>{h1TextNode}</h1>
     </div>
   );
 }
-export default Bin;
+export default Bin
