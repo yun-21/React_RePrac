@@ -21,6 +21,6 @@ module.exports = {
     ],
   },
   resolve: { //이행하다
-    extensions: [".ts", ".js"]
+    extensions: [".ts", ".js",".tsx",".jsx"]
   }
 }
