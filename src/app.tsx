@@ -1,15 +1,13 @@
 import React from 'react';
+import minam from '../static/basic-data'
+import Minam from './Minam' //컴포넌트 부품
 
-const Minam = () => {
-  return (
-    <h1>욱공재</h1>
-  );
-}
+
 //파스칼케이스
 const App:React.FC =() =>{
   return (
     <div>
-      <Minam/>
+      <Minam textNode={minam}/>
       <h1>안녕</h1>
     </div>
   );
