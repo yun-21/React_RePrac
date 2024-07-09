@@ -10,13 +10,43 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/Bin.tsx":
+/*!*********************!*\
+  !*** ./src/Bin.tsx ***!
+  \*********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Bin = function Bin(_ref) {\n  var h1TextNode = _ref.h1TextNode,\n    styles = _ref.styles;\n  return (0, jsx_runtime_1.jsx)(\"div\", {\n    children: (0, jsx_runtime_1.jsx)(\"h1\", {\n      style: styles,\n      children: h1TextNode\n    })\n  });\n};\nexports[\"default\"] = Bin;\n\n//# sourceURL=webpack://react_reprac/./src/Bin.tsx?");
+
+/***/ }),
+
+/***/ "./src/Minam.tsx":
+/*!***********************!*\
+  !*** ./src/Minam.tsx ***!
+  \***********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Minam = function Minam(_ref) {\n  var textNode = _ref.textNode;\n  return (0, jsx_runtime_1.jsx)(\"h1\", {\n    children: textNode\n  });\n};\nexports[\"default\"] = Minam;\n\n//# sourceURL=webpack://react_reprac/./src/Minam.tsx?");
+
+/***/ }),
+
+/***/ "./src/Ul.tsx":
+/*!********************!*\
+  !*** ./src/Ul.tsx ***!
+  \********************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Ul = function Ul(_ref) {\n  var textNode = _ref.textNode;\n  return (0, jsx_runtime_1.jsx)(\"ul\", {\n    children: textNode.map(function (ele) {\n      return (0, jsx_runtime_1.jsx)(\"li\", {\n        children: ele\n      });\n    })\n  });\n};\nexports[\"default\"] = Ul;\n\n//# sourceURL=webpack://react_reprac/./src/Ul.tsx?");
+
+/***/ }),
+
 /***/ "./src/app.tsx":
 /*!*********************!*\
   !*** ./src/app.tsx ***!
   \*********************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar Minam = function Minam() {\n  return (0, jsx_runtime_1.jsx)(\"h1\", {\n    children: \"\\uC6B1\\uACF5\\uC7AC\"\n  });\n};\n//파스칼케이스\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(Minam, {}), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"\\uC548\\uB155\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://react_reprac/./src/app.tsx?");
+eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar ul_1 = __importDefault(__webpack_require__(/*! ../static/ul */ \"./static/ul.tsx\"));\nvar basic_data_1 = __importDefault(__webpack_require__(/*! ../static/basic-data */ \"./static/basic-data.tsx\"));\nvar Ul_1 = __importDefault(__webpack_require__(/*! ./Ul */ \"./src/Ul.tsx\")); //컴포넌트 부품\nvar Minam_1 = __importDefault(__webpack_require__(/*! ./Minam */ \"./src/Minam.tsx\")); //컴포넌트 부품\nvar Bin_1 = __importDefault(__webpack_require__(/*! ./Bin */ \"./src/Bin.tsx\"));\nvar style_1 = __importDefault(__webpack_require__(/*! ../static/style */ \"./static/style.tsx\"));\n//파스칼케이스\nvar App = function App() {\n  return (0, jsx_runtime_1.jsxs)(\"div\", {\n    children: [(0, jsx_runtime_1.jsx)(Ul_1[\"default\"], {\n      textNode: ul_1[\"default\"]\n    }), (0, jsx_runtime_1.jsx)(Minam_1[\"default\"], {\n      textNode: basic_data_1[\"default\"]\n    }), (0, jsx_runtime_1.jsx)(Bin_1[\"default\"], {\n      styles: style_1[\"default\"],\n      h1TextNode: \"\\uC548\\uB155\"\n    }), (0, jsx_runtime_1.jsx)(\"h1\", {\n      children: \"\\uC548\\uB155\"\n    })]\n  });\n};\nexports[\"default\"] = App;\n\n//# sourceURL=webpack://react_reprac/./src/app.tsx?");
 
 /***/ }),
 
@@ -27,6 +57,36 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 eval("\n\nvar __importDefault = this && this.__importDefault || function (mod) {\n  return mod && mod.__esModule ? mod : {\n    \"default\": mod\n  };\n};\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ \"./node_modules/react/jsx-runtime.js\");\nvar app_1 = __importDefault(__webpack_require__(/*! ./app */ \"./src/app.tsx\"));\nvar client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nvar root = client_1[\"default\"].createRoot(document.getElementById('root'));\nroot.render((0, jsx_runtime_1.jsx)(app_1[\"default\"], {}));\n\n//# sourceURL=webpack://react_reprac/./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./static/basic-data.tsx":
+/*!*******************************!*\
+  !*** ./static/basic-data.tsx ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar minam = \"욱재겅\";\nexports[\"default\"] = minam;\n\n//# sourceURL=webpack://react_reprac/./static/basic-data.tsx?");
+
+/***/ }),
+
+/***/ "./static/style.tsx":
+/*!**************************!*\
+  !*** ./static/style.tsx ***!
+  \**************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar style = {\n  color: \"blue\",\n  backgroundColor: \"yellow\",\n  fontSize: \"33px\"\n};\nexports[\"default\"] = style;\n\n//# sourceURL=webpack://react_reprac/./static/style.tsx?");
+
+/***/ }),
+
+/***/ "./static/ul.tsx":
+/*!***********************!*\
+  !*** ./static/ul.tsx ***!
+  \***********************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\n\nObject.defineProperty(exports, \"__esModule\", ({\n  value: true\n}));\nvar ul = [\"뭥망\", \"널망\", \"밍망\"];\nexports[\"default\"] = ul;\n\n//# sourceURL=webpack://react_reprac/./static/ul.tsx?");
 
 /***/ }),
 
