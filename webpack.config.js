@@ -1,7 +1,7 @@
 const path = require('path');
 let name = "test";
 module.exports = {
-  entry: `./src/${name}.ts`,
+  entry: `./src/${name}.tsx`,
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: `${name}.bundle.js`
@@ -9,7 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test:/\.js$/,
+        test:/\.css$/,
+        use:["style-loader","css-loader"]
+      },
+      {
+        test:/\.js|jsx|ts|tsx$/,
         use:"babel-loader",
         exclude:/node_modules/
       },
@@ -21,6 +25,6 @@ module.exports = {
     ],
   },
   resolve: { //이행하다
-    extensions: [".ts", ".js",".tsx",".jsx"]
+    extensions: [".ts", ".js",".tsx",".jsx",".css"]
   }
 }
